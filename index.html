@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html translate="no">
 <head>
-	<title>Rom Patcher JS</title>
+	<title>Private Server Patcher</title>
 	<meta http-equiv="content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="description" content="An online web-based ROM patcher. Supported formats: IPS, BPS, UPS, APS, RUP, PPF and xdelta."/>
 	<meta name="keywords" content="ips,ups,aps,bps,rup,ninja,ppf,xdelta,patcher,online,html5,web,rom,patch,hack,translation"/>
@@ -61,6 +61,10 @@
 				file:'./patches/AssemblyCSharp-MountainsBetav1.ips',
 				name:'Steam Mountains Beta',
 				crc:0xb9e45aa0
+			},{
+				file:'./patches/AssemblyCSharp-CTF.ips',
+				name:'Capture the Flag',
+				crc:0xf78171db
 			}
 		];
 	--></script>
@@ -69,7 +73,7 @@
 
 
 <!-- HEADER -->
-<header><img src="./style/logo.png" /><h1>Gorilla Tag Private Server Patcher</h1></header>
+<header><img src="style/image.png"></header>
 
 <!-- APP -->
 <div id="wrapper">
@@ -77,7 +81,7 @@
 
 	<div id="tab0" class="tab">
 		<div class="row m-b">
-			<div class="leftcol text-right"><label for="input-file-rom" data-localize="rom_file">ROM file:</label></div>
+			<div class="leftcol text-right"><label for="input-file-rom">Assembly-CSharp.dll:</label></div>
 			<div class="rightcol">
 				<input type="file" id="input-file-rom" class="enabled" />
 			</div>
@@ -101,7 +105,7 @@
 		</div>
 
 		<div class="row m-b" id="row-file-patch">
-			<div class="leftcol text-right"><label for="input-file-patch" data-localize="patch_file">Patch file:</label></div>
+			<div class="leftcol text-right"><label for="input-file-patch">Game version:</label></div>
 			<div class="rightcol">
 				<input type="file" id="input-file-patch" accept=".ips,.ups,.bps,.aps,.rup,.ppf,.mod,.xdelta,.vcdiff,.zip"/>
 			</div>
